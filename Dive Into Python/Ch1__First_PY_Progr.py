@@ -3,7 +3,8 @@ import sys
 print(sys.version)      
 
 def fib(n):
-    '''Funzione che calcola la serie di Fibonacci'''
+    '''
+    Funzione che calcola la serie di Fibonacci'''
     print 'n =', n
     if n > 1:
         return n * fib(n - 1)
@@ -14,8 +15,10 @@ def fib(n):
 # ES: LIST COMPREHENSION
 # Definisco una funzione 
 def buildConnectionString(params):
-    """Build a connection string from a dictionary of parameters.
-    Returns string."""
+    """
+    Build a connection string from a dictionary of parameters.
+    Returns string.
+    """
     return "\n".join(["%s = %s" % (k, v) for k, v in params.items()]) 
                 #join() concatena le stringhe
                 #params.items() return una LISTA di TOUPLES [(k1, v1), (k2, v2), ...]
