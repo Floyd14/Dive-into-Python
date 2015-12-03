@@ -1,7 +1,7 @@
 import webbrowser
 import os
 
-absolute_path = "./HTML - Loc/index.html"
+absolute_path = "../HTML - Loc/index.html"
 
 webbrowser.open('file://' + os.path.realpath(absolute_path))
 

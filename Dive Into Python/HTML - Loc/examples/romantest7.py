@@ -5,8 +5,10 @@ experienced programmers.  Visit http://diveintopython3.org/ for the
 latest version.
 '''
 
-import roman7
 import unittest
+
+import roman7
+
 
 class KnownValues(unittest.TestCase):
     known_values = ( (1, 'I'),

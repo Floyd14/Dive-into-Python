@@ -1,7 +1,9 @@
 '''Unit test for plural6.py'''
 
-import plural6
 import unittest
+
+import plural6
+
 
 class KnownValues(unittest.TestCase):
     def test_sxz(self):

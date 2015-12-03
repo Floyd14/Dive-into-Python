@@ -1,7 +1,9 @@
-'''Unit test for plural1.py'''
+'''Unit test for plural5.py'''
 
-import plural1
 import unittest
+
+import plural5
+
 
 class KnownValues(unittest.TestCase):
     def test_sxz(self):
@@ -18,7 +20,7 @@ class KnownValues(unittest.TestCase):
             'waltz': 'waltzes'
             }
         for singular, plural in nouns.items():
-            self.assertEqual(plural1.plural(singular), plural)
+            self.assertEqual(plural5.plural(singular), plural)
 
     def test_h(self):
         'words ending in H'
@@ -31,7 +33,7 @@ class KnownValues(unittest.TestCase):
             'cough': 'coughs'
             }
         for singular, plural in nouns.items():
-            self.assertEqual(plural1.plural(singular), plural)
+            self.assertEqual(plural5.plural(singular), plural)
 
     def test_y(self):
         'words ending in Y'
@@ -42,7 +44,7 @@ class KnownValues(unittest.TestCase):
             'day': 'days'
             }
         for singular, plural in nouns.items():
-            self.assertEqual(plural1.plural(singular), plural)
+            self.assertEqual(plural5.plural(singular), plural)
 
     def test_default(self):
         'unexceptional words'
@@ -52,7 +54,7 @@ class KnownValues(unittest.TestCase):
             'palimpsest': 'palimpsests'
             }
         for singular, plural in nouns.items():
-            self.assertEqual(plural1.plural(singular), plural)
+            self.assertEqual(plural5.plural(singular), plural)
         
 if __name__ == '__main__':
     unittest.main()
