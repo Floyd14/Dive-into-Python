@@ -38,3 +38,9 @@ if __name__ == "__main__":
 print buildConnectionString.__doc__ # Attributo __doc__    
 print buildConnectionString(myParams)
 print fib(5)
+
+
+
+
+
+
